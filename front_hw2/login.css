@@ -3,6 +3,7 @@ body {
 }
 
 .button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1d89e4;
     border: none;
     border-radius: 8px;
@@ -14,9 +15,47 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    width: 225px;
 }
 
 .flex-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    color: white;
+}
+
+.input-field::placeholder {
+    text-align: right;
+    color: white !important;
+}
+
+.input-field {
+    width: 200px;
+    border: none;
+    background-color: transparent;
+}
+
+.input_section {
+    width: 225px;
+    border-bottom: solid 1px white;
+}
+
+.support {
+    width: 275px;
+    display: flex;
+    flex-flow: nowrap row-reverse;
+    justify-content: space-around;
+}
+
+.RemeberMe {
+    display: flex;
+    font-size: x-small;
+}
+
+.forgetPass {
+    font-size: x-small;
 }
