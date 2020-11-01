@@ -1,0 +1,22 @@
+body {
+    background-image: url(./feed/bg.jpg);
+}
+
+.button {
+    background-color: #1d89e4;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+}
