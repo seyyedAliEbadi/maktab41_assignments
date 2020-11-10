@@ -38,6 +38,18 @@ function repItem(arr, currentItem, newItem) {
     return copiedArr
 }
 
+// Extract numbers of a string
+function extNum(string) {
+    return string.match(/\d+/g).map(Number);
+}
+
+// Remove duplicate items in an array
+function remDupItem(arr) {
+    return arr.filter((value, index, self) => {
+        return self.indexOf(value) === index;
+    })
+}
+
 let myArr = ['a', 'b', 'c'];
 deleteByIndex(myArr, 2)
 
@@ -51,3 +63,7 @@ console.log(flattened_arr)
 
 let arr_copy = repItem([1, 2, 3, 4, 5], 3, 10)
 console.log(arr_copy)
+
+console.log(extNum("This is a test 2 string to extract 3 numbers"))
+
+console.log(remDupItem([1, 1, 3, 4, 4, 5, 6, 7, 7]))
